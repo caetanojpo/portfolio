@@ -1,0 +1,290 @@
+/* FORMATAÇÕES GERAIS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #b6ccd7;
+}
+
+body {
+    background: linear-gradient(90deg,#1b1b25, #5c5c84);
+    font-size: 100%;
+       
+}
+
+/* FONTES 
+
+font-family: 'Almarai', sans-serif; - TITULOS
+font-family: 'Roboto', sans-serif; - 100/300/400/700 TEXTOS
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto:wght@100;300;400;700&display=swap');
+
+
+/* CORES 
+#5c5c84 - primaria
+#b6ccd7 - secundaria
+#e34a21 - destaque
+*/
+
+
+/*ANIMAÇÕES*/
+
+@keyframes animacao-blink {
+    from {
+        border-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+@keyframes animacao-digitar {
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+
+@keyframes animacao-habilidade {
+    from {
+        width: 490px;
+    }
+    to {
+        width: 500px;
+    }
+}
+
+
+
+/* CABEÇALHO */
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: url(../img/bg-x2.png);
+    
+}
+
+#cabecalho img {
+    width: 70px;
+
+
+}
+
+#cabecalho-container  {
+    display: flex;
+    gap: 40px;
+}
+
+
+#cabecalho-container  a {
+     font-family: 'Roboto', sans-serif;;
+     color: #b6ccd7;
+     font-weight: 400;
+     font-size: 16px;
+     text-decoration: none;
+    
+}
+
+/* CONTEUDO PRINCIPAL */
+
+/*LANDING PAGE*/
+
+#principal-container {
+    border-top: 0.5px solid  #7f7f9bc7;
+    margin-bottom: 50px;
+   
+   }
+
+#principal-apr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+    
+}
+
+.principal-apr-conteudo {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#principal-apr h2 {
+    font-family: 'Almarai', sans-serif;
+    font-size: 60px;
+    padding-left: 2px;
+    animation: animacao-blink 1s infinite, animacao-digitar 2s steps(30) 1s normal both;
+    border-right: 2px solid rgba(255, 255, 255, 0.765);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#principal-apr p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    width: 400px;
+    text-align: justify;
+}
+
+#principal-apr button {
+    width: 70px;
+    height: 40px;
+    background-color: #e34a21;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    
+}
+
+#principal-apr img {
+
+    width: 400px;
+    position: relative;
+    right: 100px;
+}
+
+/*SOBRE MIM*/
+
+#principal-sm {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    background: url(../img/bg-x2.png);
+
+}
+
+
+.principal-sm-conteudo {
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+   
+
+}
+
+.principal-sm-conteudo p {
+    width: 515px;
+    text-align: justify;
+}
+
+.principal-sm-img {
+    width: 500px;
+    /*animation: animacao-habilidade 1s infinite alternate;*/
+}
+
+/*PROJETOS IMAGENS*/
+
+.principal-pj-img {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+.principal-pj-img-c {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+}
+
+
+.principal-pj-img-c img {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+/*PROJETOS TEXTO*/
+
+#principal-pj {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.principal-pj-conteudo {
+
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+
+}
+
+/*CONTATO*/
+
+#principal-ct {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    border: 1px solid red;
+    background: url(../img/bg-x2.png);
+   
+
+}
+
+#principal-ct button {
+  
+}
+
+.principal-ct-conteudo {
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    
+
+}
+
+/* RODAPÉ */
+
+
+#rodape {
+    border-top: 1px solid  #7f7f9bc7 !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background: url(../img/bg-x2.png);
+}
+
+#rodape img {
+    border: 1px solid red;
+    width: 70px;
+}
+
+.voltar-topo {
+    height: 40px;
+}
+
+
