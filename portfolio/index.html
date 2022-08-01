@@ -31,21 +31,23 @@
 
   </head>
 
-  <body >
+  <body id="portfolio" data-spy="scroll" data-targe="#menu-nav" data-offset="60">
 
     <!--Cabeçalho-->
    <header>
 
     <a href="#"><img src="img/LOGO-SVG.svg" alt="Logo K4etano"></a>
     
-    <nav>
-      
-      <ul>
-        <a href=""><li>HOME</li></a>
-        <a href=""><li>QUEM SOU EU</li></a>
-        <a href=""><li>PROJETOS</li></a>
-        <a href=""><li>CONTATO</li></a>
+    <nav class="menu" id="navegacao">
+      <div id="menu-nav">     
+        <ul>
+        <li><a href="#principal-apr">HOME</a></li>
+        <li><a href="#principal-sm">SOBRE MIM</a></li>
+        <li><a href="#principal-proje">PROJETOS</a></li>
+        <li><a href="#principal-ct">CONTATO</a></li>
       </ul>
+    </div>
+
 
     </nav>
    
@@ -88,53 +90,82 @@
 
       <!--PROJETOS-->
       
-      <section class="container-fluid text-center principal-pj">
-          <h3>PROJETOS</h3>
-          <br>
-          <div class="row">
+        <section class="container-fluid principal-pj" id="principal-proje">
+          <h2>PORTFOLIO</h2>
+          <h4>Meus Projetos</h4>
+          <div class="row principal-pj">
             <div class="col-sm-4">
-              <img src="img/moldura.png" alt="Image" class="img-responsive" style="width:70%">
-              <p>PROJETO 1</p>
+              <div class="thumbnail projeto-img">
+                <img src="img/moldura.png" alt="Projeto 1" class="img-responsive">
+                <p><strong>Projeto 1</strong></p>
+                <p>Container para futuro projeto...</p>
+              </div>
             </div>
             <div class="col-sm-4">
-              <img src="img/moldura.png" alt="Image" class="img-responsive" style="width:70%">
-              <p>PROJETO 2</p>
+              <div class="thumbnail projeto-img">
+                <img src="img/moldura.png" alt="Projeto 2" class="img-responsive">
+                <p><strong>Projeto 2</strong></p>
+                <p>Container para futuro projeto...</p>
+              </div>
             </div>
             <div class="col-sm-4">
-              <img src="img/moldura.png" alt="Image" class="img-responsive" style="width:70%">
-              <p>PROJETO 3</p>
+              <div class="thumbnail projeto-img">
+                <img src="img/moldura.png" alt="Projeto 3" class="img-responsive">
+                <p><strong>Projeto 3</strong></p>
+                <p>Container para futuro projeto...</p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
      
 
       <!--CONTATO-->
 
-      <section id="principal-ct">
-       
 
-        <div class="principal-ct-conteudo">
-          <a href="https://www.linkedin.com/in/jpocaetano/" class="btn btn-lg"><button class="btn">linkedin</button></a>
-          <button class="btn">e-mail</button>
+      
+      <section id="principal-ct">
+        
+        
+        <div>
+          <img src="img/avatar-rpg.png" alt="avatar RPG" class="mini-avatar"><span class="text-center cont">CONTATO</span> 
+        
+        </div>
+        <div>
+          
+            <p><span ></span> Assis/SP, Brazil.</p>
+            <p><span ></span> caetanojpo@gmail.com</p>
+            <p><span></span> ""</p>
+        
         </div>
 
+          <div class="principal-ct-conteudo">
+            <div class="icone">
+              <a href="https://www.linkedin.com/in/jpocaetano/"><img src="img/linkedin.png" alt="linkedin"></a>
+            </div>
+            <div class="icone">
+              <a href="https://github.com/jpocaetano"><img src="img/25231.png" alt="github"></a>
+            </div>
+            <div class="icone">
+              <a href="https://www.instagram.com/jpocaetano/"><img src="img/instagram-icone-icon-1.png" alt="instagram"></a>
+            </div>
+          </div>
+                 
       </section>
       
-
     </main>
 
    <!--Rodapé-->
 
    <footer id="rodape">
 
-    <h5>Todos os Direitos Reservados</h5>
-
-    <div>
-      <button class="btn">VOLTAR TOPO</button>
-    </div>
-
-    <img src="img/LOGO-SVG-RP.svg" alt="LOGO K4ETANO">
+     <h5>Desenvolvido por K4etano </h5>
+      
+    
+<div class="rodape-btn">
+  <a href="#navegacao"><img src="img/topo.png" alt="" class="volta-topo"></a>
+  <img src="img/LOGO-SVG-RP.svg" alt="LOGO K4ETANO" class="logo-k4e">
+</div>
+    
 
    </footer>
 

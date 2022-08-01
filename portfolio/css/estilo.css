@@ -5,12 +5,14 @@
     padding: 0px;
     box-sizing: border-box;
     color: #b6ccd7;
+    text-decoration: none;
+    
 }
 
 body {
     background: linear-gradient(90deg,#1b1b25, #5c5c84);
     font-size: 100%;
-       
+           
 }
 
 /* FONTES 
@@ -72,38 +74,47 @@ header {
     padding: 10px 20px;
     background: url(../img/bg-x2.png);
     
+    
 }
 
 header img {
     width: 70px;
 }
 
-header nav  {
+.menu  {
     display: flex; 
     text-align: center;
     padding-top: 20px;  
 }
 
-header nav li {
+.menu li {
     display: inline-block;
+    
         
 }
 
-header nav a {
+.menu ul {
+    text-decoration: none;
+}
+
+.menu a {
     margin: 20px;    
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;  
+    text-decoration: none;
+    color: #b6ccd7;
 }
 
-header nav  a:hover {
+.menu  a:hover, .menu.active a {
     font-size: 22px;
     transition: 0.3s all;
- }
-
- header nav li:hover {
     color: #e34a21;
  }
+
+ 
+
+
 
 /* CONTEUDO PRINCIPAL */
 
@@ -201,7 +212,24 @@ main {
 
 /*PROJETOS IMAGENS*/
 
+.principal-pj {
+    margin-top: 50px;
+    text-align: center;
+}
 
+.principal-pj h3 {
+    font-size: 40px;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  .thumbnail img {
+    width: 60%;
+    margin-bottom: 10px;
+  }
 
 /*CONTATO*/
 
@@ -211,26 +239,35 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 50px;
-    border: 1px solid red;
+    margin-top: 100px;
+    height: 300px;    
     background: url(../img/bg-x2.png);
    
 
 }
 
-#principal-ct button {
-  
-}
-
 .principal-ct-conteudo {
-
     display: flex;
-    gap: 10px;
-    flex-direction: column;
-    
-
+    gap: 100px;
+         
 }
 
+.principal-ct-conteudo img{
+        width: 50px;
+        justify-content: space-around;   
+    }
+
+    .cont {
+       font-size: 40px;
+       text-align: center;
+        
+    }
+    .mini-avatar {
+        width: 100px;
+        position: relative;
+        bottom: 29px;
+        padding-right: 10px;        
+    }
 /* RODAPÉ */
 
 
@@ -239,18 +276,25 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px 20px;
-    background: url(../img/bg-x2.png);
+    justify-content: space-between;
+    
 }
 
-#rodape img {
-    border: 1px solid red;
-    width: 70px;
+#rodape h5 {
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
-.voltar-topo {
-    height: 40px;
+.rodape-btn {
+    padding-right: 10px;
+}
+.logo-k4e {
+   width: 70px;
+    
 }
 
+.volta-topo {
+    width: 25px;
+   
+}
 
