@@ -1,0 +1,39 @@
+@media screen and (max-width: 760px){
+    header {
+        flex-direction: column;
+    }
+    
+
+    header nav  {
+        flex-direction: column;
+        width: max-content;
+    }
+
+    #principal-apr {
+        flex-direction: column;
+    }
+
+    #principal-apr h2 {
+        font-size: 40px;
+    } 
+
+    #principal-apr img {
+        display: none;
+    }
+
+    #principal-apr ul {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #principal-apr img {
+        width: 350px;
+        padding-top: 40px;
+        
+    }
+    
+    #principal-apr h2 {
+        font-size: 40px;
+    } 
+}

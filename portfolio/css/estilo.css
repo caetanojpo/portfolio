@@ -64,7 +64,7 @@ font-family: 'Roboto', sans-serif; - 100/300/400/700 TEXTOS
 
 /* CABEÇALHO */
 
-#cabecalho {
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,35 +74,44 @@ font-family: 'Roboto', sans-serif; - 100/300/400/700 TEXTOS
     
 }
 
-#cabecalho img {
+header img {
     width: 70px;
-
-
 }
 
-#cabecalho-container  {
-    display: flex;
-    gap: 40px;
+header nav  {
+    display: flex; 
+    text-align: center;
+    padding-top: 20px;  
 }
 
-
-#cabecalho-container  a {
-     font-family: 'Roboto', sans-serif;;
-     color: #b6ccd7;
-     font-weight: 400;
-     font-size: 16px;
-     text-decoration: none;
-    
+header nav li {
+    display: inline-block;
+        
 }
+
+header nav a {
+    margin: 20px;    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;  
+}
+
+header nav  a:hover {
+    font-size: 22px;
+    transition: 0.3s all;
+ }
+
+ header nav li:hover {
+    color: #e34a21;
+ }
 
 /* CONTEUDO PRINCIPAL */
 
 /*LANDING PAGE*/
 
-#principal-container {
+main {
     border-top: 0.5px solid  #7f7f9bc7;
-    margin-bottom: 50px;
-   
+    margin-bottom: 50px;   
    }
 
 #principal-apr {
@@ -152,7 +161,7 @@ font-family: 'Roboto', sans-serif; - 100/300/400/700 TEXTOS
 
 #principal-apr img {
 
-    width: 400px;
+    width: 500px;
     position: relative;
     right: 100px;
 }
@@ -192,50 +201,7 @@ font-family: 'Roboto', sans-serif; - 100/300/400/700 TEXTOS
 
 /*PROJETOS IMAGENS*/
 
-.principal-pj-img {
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
-    
-}
 
-.principal-pj-img-c {
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    
-}
-
-
-.principal-pj-img-c img {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-}
-
-/*PROJETOS TEXTO*/
-
-#principal-pj {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    
-}
-
-.principal-pj-conteudo {
-
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-
-}
 
 /*CONTATO*/
 

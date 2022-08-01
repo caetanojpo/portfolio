@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/media.css">
 
       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -33,16 +34,18 @@
   <body >
 
     <!--Cabeçalho-->
-   <header id="cabecalho">
+   <header>
 
-    <img src="img/LOGO-SVG.svg" alt="Logo K4etano">
+    <a href="#"><img src="img/LOGO-SVG.svg" alt="Logo K4etano"></a>
     
-    <nav id="cabecalho-container">
+    <nav>
       
-      <a href="">Apresentação</a>
-      <a href="">Sobre Mim</a>
-      <a href="">Projetos</a>
-      <a href="">Contato</a>
+      <ul>
+        <a href=""><li>HOME</li></a>
+        <a href=""><li>QUEM SOU EU</li></a>
+        <a href=""><li>PROJETOS</li></a>
+        <a href=""><li>CONTATO</li></a>
+      </ul>
 
     </nav>
    
@@ -50,8 +53,10 @@
 
    <!--Corpo-->
 
-    <main id="principal-container">
+    <main>
       
+      <!--LANDING PAGE-->
+
       <section id="principal-apr">
 
         
@@ -64,6 +69,8 @@
         <img src="img/avatar-svg.svg" alt="">
 
       </section>
+
+      <!--SOBRE MIM-->
       
       <section id="principal-sm">
         
@@ -79,45 +86,36 @@
                
       </section>
 
-      <section class="principal-pj-img ">
+      <!--PROJETOS-->
+      
+      <section class="container-fluid text-center principal-pj">
+          <h3>PROJETOS</h3>
+          <br>
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="img/moldura.png" alt="Image" class="img-responsive" style="width:70%">
+              <p>PROJETO 1</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/moldura.png" alt="Image" class="img-responsive" style="width:70%">
+              <p>PROJETO 2</p>
+            </div>
+            <div class="col-sm-4">
+              <img src="img/moldura.png" alt="Image" class="img-responsive" style="width:70%">
+              <p>PROJETO 3</p>
+            </div>
+          </div>
+        </section>
 
-        <div class="principal-pj-img-c img-esquerda">
-          <img src="img/moldura.png" alt="" class=" moldura-eb ">
-        </div>
+     
 
-        <div class="principal-pj-img-c">
-          <img src="img/moldura.png" alt="" class=" moldura-eb ">
-        </div>
-
-        <div class="principal-pj-img-c img-direita">
-          <img src="img/moldura.png" alt="" class=" moldura-eb">
-        </div>
-
-      </section>
-
-      <section id="principal-pj">
-
-       
-
-        <div class="principal-pj-conteudo">
-          <p>projeto 1</p> 
-        </div>
-
-        <div class="principal-pj-conteudo">
-            <p>projeto 2</p> 
-        </div>
-
-        <div class="principal-pj-conteudo">
-          <p>projeto 3</p> 
-        </div>
-
-      </section>
+      <!--CONTATO-->
 
       <section id="principal-ct">
        
 
         <div class="principal-ct-conteudo">
-          <button class="btn">linkedin</button>
+          <a href="https://www.linkedin.com/in/jpocaetano/" class="btn btn-lg"><button class="btn">linkedin</button></a>
           <button class="btn">e-mail</button>
         </div>
 
@@ -136,7 +134,7 @@
       <button class="btn">VOLTAR TOPO</button>
     </div>
 
-    <img src="img/LOGO-SVG-RP.svg" alt="">
+    <img src="img/LOGO-SVG-RP.svg" alt="LOGO K4ETANO">
 
    </footer>
 
