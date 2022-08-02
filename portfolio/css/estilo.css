@@ -5,14 +5,45 @@
     padding: 0px;
     box-sizing: border-box;
     color: #b6ccd7;
-    text-decoration: none;
+    text-decoration: none;    
+    
     
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background: linear-gradient(90deg,#1b1b25, #5c5c84);
-    font-size: 100%;
-           
+    font-size: 100%;           
+}
+
+body::-webkit-scrollbar {
+    width: 15px
+} 
+  
+body::-webkit-scrollbar-thumb {   
+background-color: #e34a21; 
+border-radius: 10px;  
+}
+
+body::-webkit-scrollbar-track {
+    background: #5c5c84;
+    border-radius: 10px;
+  } 
+
+  body::-webkit-scrollbar-track-piece{
+    background: #5c5c84;
+    
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: #c2401c; 
+}
+
+body::-webkit-scrollbar-corner {
+    border-radius: 20px;
 }
 
 /* FONTES 
@@ -53,15 +84,16 @@ font-family: 'Roboto', sans-serif; - 100/300/400/700 TEXTOS
     
 }
 
-@keyframes animacao-habilidade {
-    from {
-        width: 490px;
+@keyframes fadeIn {
+    from{ opacity: 0;
     }
-    to {
-        width: 500px;
+    to{ opacity: 1; 
     }
 }
 
+.fadeIn {
+    animation: fadeIn 2s linear
+}
 
 
 /* CABEÇALHO */
@@ -71,14 +103,13 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
     background: url(../img/bg-x2.png);
-    
-    
+        
 }
 
 header img {
     width: 70px;
+    margin-left: 10px;
 }
 
 .menu  {
@@ -89,13 +120,8 @@ header img {
 
 .menu li {
     display: inline-block;
-    
-        
 }
 
-.menu ul {
-    text-decoration: none;
-}
 
 .menu a {
     margin: 20px;    
@@ -110,10 +136,7 @@ header img {
     font-size: 22px;
     transition: 0.3s all;
     color: #e34a21;
- }
-
- 
-
+}
 
 
 /* CONTEUDO PRINCIPAL */
@@ -122,8 +145,7 @@ header img {
 
 main {
     border-top: 0.5px solid  #7f7f9bc7;
-    margin-bottom: 50px;   
-   }
+}
 
 #principal-apr {
     display: flex;
@@ -132,21 +154,18 @@ main {
     justify-content: space-around;
     margin-top: 50px;
     
-    
 }
 
 .principal-apr-conteudo {
-    display: flex;
-    gap: 10px;
+    display: flex;   
     flex-direction: column;
 }
 
 #principal-apr h2 {
     font-family: 'Almarai', sans-serif;
     font-size: 60px;
-    padding-left: 2px;
     animation: animacao-blink 1s infinite, animacao-digitar 2s steps(30) 1s normal both;
-    border-right: 2px solid rgba(255, 255, 255, 0.765);
+    border-right: 1px solid rgba(255, 255, 255, 0.765);
     white-space: nowrap;
     overflow: hidden;
 }
@@ -171,10 +190,7 @@ main {
 }
 
 #principal-apr img {
-
-    width: 500px;
-    position: relative;
-    right: 100px;
+    width: 25%; 
 }
 
 /*SOBRE MIM*/
@@ -192,22 +208,17 @@ main {
 
 
 .principal-sm-conteudo {
-
     display: flex;
-    gap: 10px;
-    flex-direction: column;
-   
-
+    flex-direction: column;  
 }
 
 .principal-sm-conteudo p {
-    width: 515px;
+    width: 500px;
     text-align: justify;
 }
 
 .principal-sm-img {
-    width: 500px;
-    /*animation: animacao-habilidade 1s infinite alternate;*/
+    width: 25%;
 }
 
 /*PROJETOS IMAGENS*/
@@ -217,17 +228,9 @@ main {
     text-align: center;
 }
 
-.principal-pj h3 {
-    font-size: 40px;
-}
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
 
-  .thumbnail img {
-    width: 60%;
+.thumbnail img {
+    width: 40%;
     margin-bottom: 10px;
   }
 
@@ -239,8 +242,8 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 100px;
-    height: 300px;    
+    margin-top: 50px;
+    height: 150px;    
     background: url(../img/bg-x2.png);
    
 
@@ -268,11 +271,12 @@ main {
         bottom: 29px;
         padding-right: 10px;        
     }
-/* RODAPÉ */
-
+    
+    /* RODAPÉ */
 
 #rodape {
     border-top: 1px solid  #7f7f9bc7 !important;
+    background: url(../img/bg-x2.png);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -288,6 +292,7 @@ main {
 .rodape-btn {
     padding-right: 10px;
 }
+
 .logo-k4e {
    width: 70px;
     
