@@ -1,3 +1,19 @@
+/* FONTES 
+
+font-family: 'Almarai', sans-serif; - TITULOS
+font-family: 'Roboto', sans-serif; - 100/300/400/700 TEXTOS
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto:wght@100;300;400;700&display=swap');
+
+
+/* CORES 
+#5c5c84 - primaria
+#b6ccd7 - secundaria
+#e34a21 - destaque
+*/
+
 /* FORMATAÇÕES GERAIS */
 
 * {
@@ -18,6 +34,9 @@ body {
     background: linear-gradient(90deg,#1b1b25, #5c5c84);
     font-size: 100%;           
 }
+
+
+/*BARRA DE SCROLL*/
 
 body::-webkit-scrollbar {
     width: 15px
@@ -45,22 +64,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-corner {
     border-radius: 20px;
 }
-
-/* FONTES 
-
-font-family: 'Almarai', sans-serif; - TITULOS
-font-family: 'Roboto', sans-serif; - 100/300/400/700 TEXTOS
-
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto:wght@100;300;400;700&display=swap');
-
-
-/* CORES 
-#5c5c84 - primaria
-#b6ccd7 - secundaria
-#e34a21 - destaque
-*/
 
 
 /*ANIMAÇÕES*/
