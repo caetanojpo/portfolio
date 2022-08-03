@@ -3,11 +3,11 @@
 * {
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
+    position: relative;
     box-sizing: border-box;
     color: #b6ccd7;
-    text-decoration: none;    
-    
-    
+    text-decoration: none;         
 }
 
 html {
@@ -137,8 +137,7 @@ header img {
     transition: 0.3s all;
     color: #e34a21;
 }
-
-
+ 
 /* CONTEUDO PRINCIPAL */
 
 /*LANDING PAGE*/
@@ -212,14 +211,48 @@ main {
     flex-direction: column;  
 }
 
-.principal-sm-conteudo p {
-    width: 500px;
-    text-align: justify;
-}
 
 .principal-sm-img {
     width: 25%;
 }
+
+.saibaMais {
+    height: 150px;
+    width: 500px;
+    text-align: justify;
+    overflow: hidden;
+    font-size: 18px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+       
+}
+
+.saibaMais-cor {
+    color: #e34a21;
+    font-weight: bold;
+    position: relative;
+        
+}
+
+.saibaMais:hover {
+    width: 700px;
+    height: 420px;
+    font-size: 25px;
+    background-color: #e34b2118;
+    border-radius: 25px;
+}
+
+.saibaMais:hover span {
+    font-size: 0px;
+}
+
+.saibaMais:hover h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+
 
 /*PROJETOS IMAGENS*/
 
