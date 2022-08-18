@@ -32,7 +32,8 @@ html {
 
 body {
     background: linear-gradient(90deg,#1b1b25, #5c5c84);
-    font-size: 100%;           
+    font-size: 100%;    
+    font-family: 'Roboto', sans-serif;    
 }
 
 
@@ -139,6 +140,7 @@ header img {
     font-size: 22px;
     transition: 0.3s all;
     color: #e34a21;
+    text-decoration: underline;
 }
  
 /* CONTEUDO PRINCIPAL */
@@ -220,41 +222,54 @@ main {
 }
 
 .saibaMais {
-    height: 150px;
+    height: 220px;
     width: 500px;
+    padding-left: 5px;
     text-align: justify;
     overflow: hidden;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 20px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function: ease;
-       
+    transition-timing-function: ease;   
 }
 
-.saibaMais-cor {
+.saibaMais p {
+    color: white;
+}
+
+#quisSaber {
+    border-radius: 10px;
+    font-size: 15px;
+    background-color:#e34a21;
+    border: 0px;
+    color: #fff;
+    height: 35px;
+    text-align:center;
+    margin-top: 10px;
+    padding:5px
+    
+}
+
+.soubeMais {
     color: #e34a21;
     font-weight: bold;
-    position: relative;
+    width: 750px;
+    height: 380px;
+    
+    font-size: 24px;
+   
         
 }
 
-.saibaMais:hover {
-    width: 700px;
-    height: 420px;
-    font-size: 25px;
-    background-color: #e34b2118;
-    border-radius: 25px;
+.soubeMais p {
+    color: #b6ccd7;
 }
 
-.saibaMais:hover span {
-    font-size: 0px;
-}
-
-.saibaMais:hover h2 {
+.soubeMais h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 38px;
 }
-
 
 
 /*PROJETOS IMAGENS*/
